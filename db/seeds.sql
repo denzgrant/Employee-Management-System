@@ -28,9 +28,9 @@ INSERT INTO role (role_title, department_id) VALUES ('Lead IT Specialist', 1);
 INSERT INTO role (role_title, department_id) VALUES ('Lead Software Developer', 2);
 INSERT INTO role (role_title, department_id) VALUES ('Sales Lead', 3);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Jen','Barber', 4, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Bill','Lumbergh', 5, 2);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Micheal','Scott', 6, 3);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Jen','Barber', 4);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Bill','Lumbergh', 5);
+INSERT INTO employee (first_name, last_name, role_id) VALUES ('Micheal','Scott', 6);
 
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Maurice' 'Moss', 1, 1);

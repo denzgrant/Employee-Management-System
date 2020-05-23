@@ -40,7 +40,7 @@ function addDepartment() {
                 },
                 function (err, results) {
                     if (err) throw err;
-                    console.log("New Department has been added!", results)
+                    console.table("New Department has been added!", results)
                 }
             );
         })

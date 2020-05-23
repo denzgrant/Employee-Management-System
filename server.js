@@ -38,5 +38,5 @@ function firstDecision() {
 }
 //Adding a department, role, or employee
 
+exports.firstDecision = firstDecision; 
 firstDecision();
-module.exports = { firstDecision }
