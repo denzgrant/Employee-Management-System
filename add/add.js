@@ -40,7 +40,7 @@ function addDepartment() {
                 },
                 function (err, results) {
                     if (err) throw err;
-                    console.table("New Department has been added!", results)
+                    console.log("New Department has been added!", results)
                 }
             );
         })
@@ -51,16 +51,24 @@ function addRole() {
             name: "addRole",
             type: "input",
             message: "What name do you want for this role?",
-        }).then(function (answer) {
+        },
+        {
+            name: "addSalary",
+            type: "input",
+            message: "What is the salary?",
+        }
+        //add department ID
+        ).then(function (answer) {
             console.log(answer);
             connection.query(
                 "INSERT INTO role SET ?",
                 {
-                    role_title: answer.addRole
+                    role_title: answer.addRole,
+                    salary: answer.addSalary
                 },
                 function (err, results) {
                     if (err) throw err;
-                    console.log("New Role has been added!");
+                    console.log("New Role has been added!", results);
                 }
             );
         })
@@ -80,20 +88,21 @@ function addEmployee() {
         {
             name: "addEmployeeRole",
             type: "input",
-            message: "What is the employee's role?",
+            message: "What is the employee's title?",
+        },
+        {
+            name: "addEmployeeDepart",
+            type: "input",
+            message: "What department is this employee in?",
         },
         ]).then(function (answer) {
-            console.log(answer);
             connection.query(
                 "INSERT INTO employee SET ?",
                 {
-                    first_name: answer.addEmployeeFirstName
-                },
-                {
-                    last_name: answer.addEmployeeLastName
-                },
-                {
-                    role_id: answer.addEmployeeRole
+                    first_name: answer.addEmployeeFirstName,
+                    last_name: answer.addEmployeeLastName,
+                    role_id: answer.addEmployeeRole,
+                    department_name: answer.addEmployeeDepart
                 },
                 function (err, results) {
                     if (err) throw err;
@@ -103,3 +112,4 @@ function addEmployee() {
         })
 }
 module.exports = { addData }
+
