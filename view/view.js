@@ -11,7 +11,6 @@ function viewData() {
             message: "What do you want to view?",
             choices: ["View all Employees",
                 "View Employees by Department",
-                "View all Employees by Manager",
                 "View Departments",
                 "View Positions",
                 "Go Back To The Main Menu"]
@@ -21,9 +20,6 @@ function viewData() {
             }
             else if (answer.view === "View Employees by Department") {
                 viewEmployeesByDepart();
-            } else if (answer.view === "View all Employees by Manager") {
-                viewEmployeeByManager();
-
             } else if (answer.view === "View Departments") {
                 viewDepartments();
 
@@ -84,10 +80,10 @@ const viewDepartments = () => {
 const viewPositions = () => {
     connection.query(
         `SELECT role_title, salary FROM role
-         ORDER BY role_title `, 
+         ORDER BY role_title `,
         function (err, results) {
-            if (err) throw err; 
-            console.table(results); 
+            if (err) throw err;
+            console.table(results);
             viewData();
         }
     )

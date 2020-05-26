@@ -1,6 +1,8 @@
 const connection = require("./db/connection");
 const add = require("./add/add");
 const view = require("./view/view");
+const deletD = require("./delete/delete");
+const deletD = require("./delete/delete");
 var inquirer = require("inquirer");
 var figlet = require('figlet');
 const chalk = require('chalk');
@@ -21,17 +23,21 @@ function firstDecision() {
             name: "first",
             type: "list",
             message: "Hello, what is your inquiry?",
-            choices: ["ADD", "VIEW", "UPDATE"]
+            choices: ["ADD", "VIEW", "UPDATE", "DELETE", "EXIST"]
         }).then(function (answer) {
             if (answer.first === "ADD") {
                 add.addData();
             }
             else if (answer.first === "VIEW") {
                 view.viewData();
-            } else if (answer.first === "UPDATE") {
+            } 
+            else if (answer.first === "UPDATE") {
                 update();
 
-            } else {
+            } else if (answer.first === "DELETE") {
+                deletD.deleteData();
+
+            }else {
                 connection.end();
             }
         });
