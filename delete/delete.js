@@ -110,7 +110,7 @@ function deletEmployee() {
                 connection.query(
                     "DELETE FROM employee WHERE ?",
                     {
-                        id = answer.id
+                        id: answer.deletEmployee
                     },
                     function (err, res) {
                         if (err) throw err;

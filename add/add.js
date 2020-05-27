@@ -53,7 +53,7 @@ function addRole() {
         inquirer
             .prompt([{
                 name: "addDepart",
-                type: "rawlist",
+                type: "list",
                 choices: function () {
                     var departArray = [];
                     for (var i = 0; i < res.length; i++) {

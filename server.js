@@ -2,7 +2,7 @@ const connection = require("./db/connection");
 const add = require("./add/add");
 const view = require("./view/view");
 const deletD = require("./delete/delete");
-const deletD = require("./delete/delete");
+const up = require("./update/update")
 var inquirer = require("inquirer");
 var figlet = require('figlet');
 const chalk = require('chalk');
@@ -23,26 +23,29 @@ function firstDecision() {
             name: "first",
             type: "list",
             message: "Hello, what is your inquiry?",
-            choices: ["ADD", "VIEW", "UPDATE", "DELETE", "EXIST"]
+            choices: ["ADD", "VIEW", "UPDATE", "DELETE", "EXIT"]
         }).then(function (answer) {
             if (answer.first === "ADD") {
                 add.addData();
             }
             else if (answer.first === "VIEW") {
                 view.viewData();
-            } 
+            }
             else if (answer.first === "UPDATE") {
-                update();
+                up.updateData();
 
-            } else if (answer.first === "DELETE") {
+            }
+            else if (answer.first === "DELETE") {
                 deletD.deleteData();
 
-            }else {
+            }
+            else {
+                console.table("Goodbye!")
                 connection.end();
             }
         });
 }
 //Adding a department, role, or employee
 
-exports.firstDecision = firstDecision; 
+exports.firstDecision = firstDecision;
 firstDecision();

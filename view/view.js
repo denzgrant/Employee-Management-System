@@ -44,7 +44,7 @@ const viewAllEmployees = () => {
         function (err, results) {
             if (err) throw err;
 
-            console.table(results);
+            console.table(results, "Warning: Milton Waddams technically isn't employed by Characters Inc");
             viewData();
         }
     );
