@@ -1,7 +1,6 @@
   <h1>Team Profile Generator</h1>
   <p>Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. This applicationis used for managing a company's employees using node, inquirer, and MySQL.
- <iframe src="https://drive.google.com/file/d/1MgFoOh4f4Kg2xwfN9MhzW22ivi_eccMh/preview" width="640" height="480">
-  </iframe>
+<img src="/ezgif.com-crop.gif" alt="demogif">  
 </p>
   <h2>Table of Contents</h2>
   <ul> 
