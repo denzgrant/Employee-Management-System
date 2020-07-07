@@ -1,5 +1,15 @@
-  <h1>Team Profile Generator</h1>
-  <p>Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems. This application is used for managing a company's employees using Node.js, inquirer, and MySQL.
+<img src="https://img.shields.io/badge/Node-12.16.3-brightgreen"> <img src="https://img.shields.io/badge/-JavaScript-brightgreen">
+<h1>Team Profile Generator</h1>
+  
+<p>Team Profile Generator is a Content Management Systems that stores this user's information MySQL. This application is used for managing a company's employees using Node.js, inquirer, and CRUD opertions.</p>
+  
+ ## User Story
+ ```
+As a business owner
+I want to be able to view and manage the departments, roles, and employees in my company
+So that I can organize and plan my business
+```
+
  <br>
 <img src="/ezgif.com-crop.gif" alt="demogif">  
 </p>
@@ -22,15 +32,14 @@
 </code></pre></li>
 </ol>
   <h2 id="Usage">Usage</h2>
-  <p>This application can be used to display information regarding a team's employees</p> 
+  <p>This application can be used to create an employee database using CRUD operations. 
   <h2 id="License">License</h2>
   <p>Licensed under the <a href="./LICENSE">MIT</a></p>
   <h2 id="Contributing">Contributing</h2>
   <p>Anyone is free to contribute to this application. Being an open source community makes the Dev community special. Any contributes are appreciated. </p>
   <h2 id="Questions">Questions</h2>
   <p style="strong">Any questions regarding this project, contact denzgrant@gmail.com directly.</p> 
-  <img src="https://avatars.githubusercontent.com/u/58059554?" alt="git hub profile picture" height="225" width="250"      
-  <img src="https://img.shields.io/badge/Node-12.16.3-brightgreen">
-  <img src="https://img.shields.io/badge/-JavaScript-brightgreen">
+  <img src="https://avatars.githubusercontent.com/u/58059554?" alt="git hub profile picture" height="225" width="250">
+  
   <img src="https://img.shields.io/github/followers/denzgrant?label=follow&style=social">
   
