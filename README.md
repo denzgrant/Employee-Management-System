@@ -1,7 +1,7 @@
 <img src="https://img.shields.io/badge/Node-12.16.3-brightgreen"> <img src="https://img.shields.io/github/last-commit/denzgrant/Employee-Management-System">
 <h1>Team Profile Generator</h1>
   
-<p>Team Profile Generator is a Content Management Systems that stores the user's information in MySQL. This application is used for managing a company's employee data using Node.js, inquirer, and CRUD opertions.</p>
+<p>Team Profile Generator is a Content Management System that stores the user's information in MySQL. This application is used for managing a company's employee data using Node.js, inquirer, and CRUD operations.</p>
   
  ## User Story
  ```
