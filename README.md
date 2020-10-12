@@ -1,7 +1,7 @@
 <img src="https://img.shields.io/badge/Node-12.16.3-brightgreen"> <img src="https://img.shields.io/github/last-commit/denzgrant/Employee-Management-System">
-<h1>Team Profile Generator</h1>
+<h1>Employee-Management-System</h1>
   
-<p>Team Profile Generator is a Content Management System that stores the user's information in MySQL. This application is used for managing a company's employee data using Node.js, inquirer, and CRUD operations.</p>
+<p>Employee-Management-System is a Content Management System that stores the user's information in MySQL. This application is used for managing a company's employee data using Node.js, inquirer, and CRUD operations.</p>
   
  ## User Story
  ```
@@ -24,7 +24,7 @@ So that I can organize and plan my business
   <h2 id="Installation">Installation</h2>                         
   <p>
   <ol>
-<li>Clone this repository.<pre><code> git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://https://github.com/denzgrant/Employee-Management-System.git
+<li>Clone this repository.<pre><code> git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/denzgrant/Employee-Management-System.git
 </code></pre></li>
 <li>Install Nodejs dependencies.<pre><code> npm <span class="hljs-keyword">install</span>
 </code></pre></li>
